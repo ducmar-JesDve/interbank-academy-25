@@ -1,66 +1,67 @@
 # Reto Técnico: Procesamiento de Transacciones Bancarias (CLI)
 
-## Objetivo:
+## Introducción:
 
-Desarrolla una aplicación de línea de comandos (CLI) que procese un archivo CSV con transacciones bancarias y genere un reporte que incluya:
-
-- **Balance Final:**  
-  Suma de los montos de las transacciones de tipo "Crédito" menos la suma de los montos de las transacciones de tipo "Débito".
-
-- **Transacción de Mayor Monto:**  
-  Identificar el ID y el monto de la transacción con el valor más alto.
-
-- **Conteo de Transacciones:**  
-  Número total de transacciones para cada tipo ("Crédito" y "Débito").
+Este reto permite obtener un reporte final de transacciones bancarias y su proposito es brindar información consolidada hacerca del Balance Final, Transacción de Mayor Monto y Conteo de transacciones
 
 ---
 
-## Instrucciones
+## Instrucciones de Ejecución: 
 
-1. **Repositorio Base:**  
-   Clona o haz un fork del repositorio base disponible en:  
-   `https://github.com/codeableorg/interbank-academy-25`
+1. **Repositorio:**  
+   Clona o haz un fork del repositorio disponible en:  
+   `https://github.com/ducmar-JesDve/interbank-academy-25.git`
 
-2. **Entrada de Datos:**  
-   La aplicación deberá leer un archivo CSV. Ejemplo de contenido:
+2. **Instalar dependencias:**  
+   Antes de ejecutar el proyecto, verifica si tienes instalado pandas en tu maquina con el siguiente comando en el CMD: 
 
    ```
-   id,tipo,monto
-   1,Crédito,100.00
-   2,Débito,50.00
-   3,Crédito,200.00
-   4,Débito,75.00
-   5,Crédito,150.00
+   pip show pandas
+   ```
+   Si lo tienes, el comando te dara toda la informacion, desde la version y ubicacion.
+   Si no lo tienes, instalalo con el siguiente comando en el CMD: 
+
+   ``
+   pip install pandas
    ```
 
-3. **Salida del Programa:**  
-   La aplicación debe mostrar el reporte final en la terminal.  
-   Ejemplo de salida:
+3. **Ejecutar el proyecto:**  
+   Para ejecutar el proyecto, debe abrir la carpeta o estar en la ruta del archivo .py la aplicación debe mostrar el reporte final en la terminal.  
+   Ejemplo de salida al ejecutar "python procesamientoBancario.py"
 
    ```
    Reporte de Transacciones
    ---------------------------------------------
-   Balance Final: 325.00
-   Transacción de Mayor Monto: ID 3 - 200.00
-   Conteo de Transacciones: Crédito: 3 Débito: 2
+   Balance Final: 10985.85
+   Transacción de Mayor Monto: ID 222 - 499.69
+   Conteo de Transacciones: Crédito: 508 Débito: 492
    ```
 
-4. **Lenguaje de Programación:**  
-   Utiliza el lenguaje de tu preferencia. Opciones recomendadas:
+---
 
-   - Python
-   - Java
-   - C#
-   - JavaScript (Node.js)
+## Enfoque y Solución:
+Para la solución del reto, obte por usar pandas para manejar el archivo csv de manera mas rapida; ademas, use funciones prodias de pandas que permitieron obtener los resultados. 
 
-5. **README del Proyecto:**  
-   Incluye un archivo `README.md` con la siguiente estructura:
+Para ello segui los siguientes pasos:
 
-   - **Introducción:** Breve descripción del reto y su propósito.
-   - **Instrucciones de Ejecución:** Cómo instalar dependencias y ejecutar la aplicación.
-   - **Enfoque y Solución:** Lógica implementada y decisiones de diseño.
-   - **Estructura del Proyecto:** Archivos y carpetas principales.
+Lectura del csv.
+Calculo del Balance Final.
+Transaccion de Mayor Monto.
+Conteo de Transacciones.
+Presentación del informe.
 
-6. **Documentación y Calidad del Código:**
-   - Código bien documentado y fácil de leer.
-   - Comentarios explicando pasos clave y lógica del programa.
+---
+
+## Estructura del Proyecto:
+El proyecto tiene la siguiente estructura: 
+
+/interbank-academy-25 # Nombre de la carpeta principal
+│
+├── /data                           # Carpeta que contiene el archivo CSV
+│   └──data.csv                     # Archivo CSV
+│
+├── /scripts                        # Codigo fuente de la aplicacion
+│   └── procesamientoBancario.py    # Archivo principal para ejecutar el proyecto
+|
+└── README.md                       # Este archivo
+
