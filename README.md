@@ -21,7 +21,7 @@ Este reto permite obtener un reporte final de transacciones bancarias y su propo
    Si lo tienes, el comando te dara toda la informacion, desde la version y ubicacion.
    Si no lo tienes, instalalo con el siguiente comando en el CMD: 
 
-   ``
+   ```
    pip install pandas
    ```
 
@@ -54,14 +54,14 @@ Presentación del informe.
 
 ## Estructura del Proyecto:
 El proyecto tiene la siguiente estructura: 
-
-/interbank-academy-25 # Nombre de la carpeta principal
-│
-├── /data                           # Carpeta que contiene el archivo CSV
-│   └──data.csv                     # Archivo CSV
-│
-├── /scripts                        # Codigo fuente de la aplicacion
-│   └── procesamientoBancario.py    # Archivo principal para ejecutar el proyecto
-|
-└── README.md                       # Este archivo
-
+   ```
+   /interbank-academy-25 # Nombre de la carpeta principal
+   │
+   ├── /data                           # Carpeta que contiene el archivo CSV
+   │   └──data.csv                     # Archivo CSV
+   │
+   ├── /scripts                        # Codigo fuente de la aplicacion
+   │   └── procesamientoBancario.py    # Archivo principal para ejecutar el proyecto
+   |
+   └── README.md                       # Este archivo
+   ```
